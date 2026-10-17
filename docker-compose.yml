@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    image: nurkamal-nurkamal-devops
+    container_name: nurkamal-nurkamal-container
+    environment:
+      STUDENT_NAME: "Kunapiya"
+      STUDENT_SURNAME: "Nurkamal"
+      STUDENT_GROUP: "IT2-2309"
+      STUDENT_ID: "41526"

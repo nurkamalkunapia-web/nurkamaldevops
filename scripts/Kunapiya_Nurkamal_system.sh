@@ -1,17 +1,18 @@
 #!/bin/bash
 
-echo "=================================="
-echo "       Student Information"
-echo "=================================="
-echo "Name: Kunapiya"
-echo "Surname: Nurkamal"
-echo "Group: IT2-2309"
-echo "Student ID: 41526"
+STUDENT_NAME="${STUDENT_NAME:-Kunapiya}"
+STUDENT_SURNAME="${STUDENT_SURNAME:-Nurkamal}"
+STUDENT_GROUP="${STUDENT_GROUP:-IT2-2309}"
+STUDENT_ID="${STUDENT_ID:-41526}"
 
+echo "=================================="
+echo "DevOps Student Application"
+echo "=================================="
+echo "Name: $STUDENT_NAME"
+echo "Surname: $STUDENT_SURNAME"
+echo "Group: $STUDENT_GROUP"
+echo "Student ID: $STUDENT_ID"
 echo ""
-echo "=================================="
-echo "       System Information"
-echo "=================================="
 echo "Username: $(whoami)"
 echo "Hostname: $(hostname)"
 echo "Current Date: $(date)"
@@ -28,3 +29,5 @@ if [ -f "Kunapiya_Nurkamal_info.txt" ]; then
 else
     echo "Student information file does not exist."
 fi
+
+echo "Application is running successfully!"
