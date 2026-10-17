@@ -1,29 +1,30 @@
 #!/bin/bash
 
 echo "=================================="
-echo " Student: Kunapiya Nurkamal"
-echo " Group: IT2-2309"
-echo " Student ID: 41526"
+echo "       Student Information"
 echo "=================================="
+echo "Name: Kunapiya"
+echo "Surname: Nurkamal"
+echo "Group: IT2-2309"
+echo "Student ID: 41526"
 
 echo ""
-echo "System information:"
+echo "=================================="
+echo "       System Information"
+echo "=================================="
 echo "Username: $(whoami)"
 echo "Hostname: $(hostname)"
-echo "Current directory: $(pwd)"
-echo "Date and time: $(date)"
-
+echo "Current Date: $(date)"
+echo "Operating System: $(uname -s)"
 echo ""
-echo "Disk usage:"
+echo "Disk Usage:"
 df -h /
-
 echo ""
-echo "Memory usage:"
+echo "Memory Usage:"
 free -h
 
-echo ""
-echo "Project directories:"
-ls -la
-
-echo ""
-echo "Script completed successfully."
+if [ -f "Kunapiya_Nurkamal_info.txt" ]; then
+    echo "Student information file exists."
+else
+    echo "Student information file does not exist."
+fi

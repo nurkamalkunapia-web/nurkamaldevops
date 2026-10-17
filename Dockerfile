@@ -10,4 +10,6 @@ COPY . .
 
 RUN chmod +x scripts/Kunapiya_Nurkamal_system.sh
 
+EXPOSE 8080
+
 CMD ["bash", "scripts/Kunapiya_Nurkamal_system.sh"]
